@@ -156,7 +156,7 @@ const getorder = async (req, res) => {
 const addNewBooking = async (req, res) => {
     try {
         console.log(req)
-        // const list = await bookingService.addBooking(req.body)
+        const list = await bookingService.addBooking(req.body)
         return res.status(200).json(
             {
                 message: "add booking success",
